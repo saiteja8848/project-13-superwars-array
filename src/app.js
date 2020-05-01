@@ -32,7 +32,7 @@ const initPlayers = (players) => {
             if (index % 2 == 0) {
                 var obj = {
                     name: name,
-                    strength: 100,
+                    strength: getRandomStrength(),
                     image: "./images/super-" + (index + 1) + ".png",
                     type: "hero"
                 };
@@ -41,7 +41,7 @@ const initPlayers = (players) => {
             else {
                 var obj = {
                     name: name,
-                    strength: 100,
+                    strength: getRandomStrength(),
                     image: "./images/super-" + (index + 1) + ".png",
                     type: "villain"
                 };
